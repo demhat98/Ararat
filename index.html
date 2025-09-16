@@ -1,96 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Demhat Ararat</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(-45deg, #2c3e50, #4ca1af, #2980b9, #6dd5ed);
-      background-size: 400% 400%;
-      animation: gradientBG 12s ease infinite;
-    }
-
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    .card {
-      background: #fff;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0px 5px 25px rgba(0,0,0,0.3);
       text-align: center;
-      width: 320px;
-      animation: fadeIn 1s ease-in-out;
+      background: linear-gradient(to bottom, #0077b6, #0096c7);
+      margin: 0;
+      padding: 0;
+      color: #fff;
     }
-
-    .card img {
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      background: #fff;
+      color: #000;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    img {
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #4ca1af;
+      border: 4px solid #0096c7;
       margin-bottom: 15px;
     }
-
-    .card h1 {
-      font-size: 24px;
-      margin-bottom: 20px;
-      color: #333;
-      text-transform: capitalize;
+    h2 {
+      margin: 10px 0 20px;
     }
-
-    .links a {
+    .btn {
       display: block;
       margin: 10px 0;
       padding: 12px;
-      border-radius: 12px;
+      border-radius: 8px;
+      text-decoration: none;
       font-size: 16px;
       font-weight: bold;
-      color: #fff;
-      text-decoration: none;
-      transition: transform 0.2s ease, opacity 0.25s ease;
+      transition: 0.3s;
     }
-
-    .links a:hover {
-      opacity: 0.85;
+    .facebook { background: #1877f2; color: #fff; }
+    .instagram { background: #e4405f; color: #fff; }
+    .whatsapp { background: #25d366; color: #fff; }
+    .youtube { background: #ff0000; color: #fff; }
+    .gmail { background: #d93025; color: #fff; }
+    .btn:hover {
+      opacity: 0.8;
       transform: scale(1.05);
-    }
-
-    .facebook { background: #1877f2; }
-    .instagram { background: #e1306c; }
-    .whatsapp { background: #25d366; }
-    .youtube { background: #ff0000; }
-    .gmail { background: #ea4335; }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <!-- صورتك الحقيقية من داخل المستودع -->
-    <img src="IMG-20241122-WA0006.jpg" alt="Demhat Ararat" />
-    <h1>Demhat Ararat</h1>
-    <div class="links">
-      <a href="https://www.facebook.com/share/1B9CdJX596/" class="facebook" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-      <a href="https://www.instagram.com/demhat_ararat98/" class="instagram" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="https://wa.me/905055444946" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-      <a href="https://www.youtube.com/@Demhat_ararat" class="youtube" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
-      <a href="mailto:demhatararat75@gmail.com" class="gmail" target="_blank"><i class="fas fa-envelope"></i> Gmail</a>
-    </div>
+  <div class="container">
+    <!-- صورتك -->
+    <img src="https://i.ibb.co/9bD8H6z/profile.jpg" alt="Demhat Ararat">
+    
+    <h2>Demhat Ararat</h2>
+
+    <!-- روابط -->
+    <a class="btn facebook" href="https://facebook.com/demhat_ararat" target="_blank">Facebook</a>
+    <a class="btn instagram" href="https://instagram.com/demhat_ararat98" target="_blank">Instagram</a>
+    <a class="btn whatsapp" href="https://wa.me/905550444946" target="_blank">WhatsApp</a>
+    <a class="btn youtube" href="https://youtube.com/@Demhat_ararat" target="_blank">YouTube</a>
+    <a class="btn gmail" href="mailto:yourmail@gmail.com" target="_blank">Gmail</a>
   </div>
 </body>
 </html>
